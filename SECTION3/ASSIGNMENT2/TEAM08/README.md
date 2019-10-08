@@ -6,7 +6,7 @@ Put your name in the Team Section and comment
 
 ## Team
 Jeremy Tran
-
+Zecheng Shi
 
 ## Comments
 Fun fact: I've only drank Coca-Cola twice in my life. -Jeremy Tran
