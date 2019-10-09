@@ -9,4 +9,4 @@ Jeremy Tran
 
 
 ## Comments
-Fun fact: I've only drank Coca-Cola twice in my life. -Jeremy
+Fun fact: I've only drank Coca-Cola twice in my life. -Jeremy Tran

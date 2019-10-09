@@ -6,5 +6,9 @@ Put your name in the Team Section and comment
 
 ## Team
 
+- Kayla Schroeder
+
 
 ## Comments
+
+- Not really sure what to say, but here's my comment!
