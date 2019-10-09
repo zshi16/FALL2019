@@ -6,6 +6,7 @@ Put your name in the Team Section and comment
 
 ## Team
 ### Mengtong Pan 
+### Yuqing Jin
 
 ## Comments
 ### Shibas are cute. I'm trying to include a pic here but it might not work...
