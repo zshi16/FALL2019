@@ -6,6 +6,8 @@ Put your name in the Team Section and comment
 
 ## Team
 Samuel Chen
+Tingyi Lu
 
 ## Comments
 Hello friends
+We are all getting A's. ---Tingyi(Chris)
