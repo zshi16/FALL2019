@@ -8,11 +8,13 @@ Put your name in the Team Section and comment
 
 Shatakshi Mohan  
 Miao Xu
+Lisa Kaunitz
 
 ## Comments
 Hi!  
 Hi It's Wendy  
 Hello  
+Hello it's Lisa!
 
 
 
