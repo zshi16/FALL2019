@@ -7,8 +7,10 @@ Put your name in the Team Section and comment
 ## Team
 - Samuel Aycock
 - Charles Qian
+- Waveley Qiu
 
 ## Comments
 - I'm a photographer
 - This is Sam's comment. Hello Team 5!
+- Waveley commenting. 
 
