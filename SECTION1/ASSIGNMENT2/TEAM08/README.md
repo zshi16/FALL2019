@@ -6,6 +6,8 @@ Put your name in the Team Section and comment
 
 ## Team
 1. Yuqi Meng
+xilin tan
 
 ## Comments
 1. I like spicy food!
+seafood
