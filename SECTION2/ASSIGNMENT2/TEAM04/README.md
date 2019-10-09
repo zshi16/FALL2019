@@ -7,6 +7,9 @@ Put your name in the Team Section and comment
 ## Team
 
 Mengtong Zhang
+Christina Indudhara
+
 ## Comments
 
 I like watermelon
+I like mango
