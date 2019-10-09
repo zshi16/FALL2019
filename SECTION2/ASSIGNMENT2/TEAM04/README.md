@@ -7,6 +7,8 @@ Put your name in the Team Section and comment
 ## Team
 
 Mengtong Zhang
+James Elisaldez
 ## Comments
 
 I like watermelon
+""You miss **100%** of the shots you don't take" -Wayne Gretzky" -*Michael Scott*
