@@ -11,9 +11,13 @@ Put your name in the Team Section and comment
 
 -Kayla Schroeder
 
+-Tiffany Hsu
+
 ## Comments
 
 -I like sushi
 
 -Not really sure what to say, but here's my comment!
+
+-Tiffany's comment
 
