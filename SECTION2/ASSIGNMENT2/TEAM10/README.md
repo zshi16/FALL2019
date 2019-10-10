@@ -9,5 +9,13 @@ Put your name in the Team Section and comment
 Hi, I am Jiayu Lyu (Nicole).
 Indoo Park
 
+
+
+
 ## Comments
-Indoo Park
+I spent 15 minutes trying to find this file. 
+Hi, I am Qianqian Hunag (Chain)
+
+This is Qichen (Sam) Liang.
+
+
