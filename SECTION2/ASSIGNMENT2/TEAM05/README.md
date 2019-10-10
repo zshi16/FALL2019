@@ -5,13 +5,12 @@ You found it!  Add text to as if it were a regular R Markdown file.
 Put your name in the Team Section and comment
 
 ## Team
-Samuel Aycock
-- Tiffany Hsu
+- Samuel Aycock
 - Charles Qian
+- Waveley Qiu
 
 ## Comments
-- Tiffany's comment lol
 - I'm a photographer
+- This is Sam's comment. Hello Team 5!
+- Waveley commenting. 
 
-## Comments
-This is Sam's comment. Hello Team 5!

@@ -10,6 +10,8 @@ Patricia Njo
 
 Xinyi Xu
 
+Yingyi Zhu
+
 ## Comments
 
 Requesting to be a member of STATS140SL

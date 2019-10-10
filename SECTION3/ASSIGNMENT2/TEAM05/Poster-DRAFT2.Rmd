@@ -1,0 +1,199 @@
+---
+title: Generate Reproducible & Live HTML and PDF Conference Posters Using RMarkdown
+author:
+  - name: Anna Lee
+    affil: 1
+  - name: Situ Ma
+    affil: 1
+  - name: Peijiu Qian
+    affil: 1
+  - name: Yi Lin Ye
+    affil: 1
+affiliation:
+  - num: 1
+    address: Department of Statistics, UCLA
+# - num: 2
+#   address: Some other affiliation
+column_numbers: 4
+titlebox_borderwidth:	"0.5cm"
+sectitle_boxshape:	"8mm 0mm"
+sectitle_bordercol:	"#C3D7EE"
+author_textcol:	"#FFD100"
+font_family: Copperplate
+primary_colour: "#8BB8E8"
+secondary_colour: "#C3D7EE"
+accent_colour: "#FFD100"
+affiliation_textcol: "#FFB81C"
+logoright_name: https&#58;//raw.githubusercontent.com/brentthorne/posterdown/master/images/betterhexlogo.png
+logoleft_name: http&#58;//www.firststar.org/wp-content/uploads/2015/02/ucla1.jpg
+## https://ev0awwmgj4-flywheel.netdna-ssl.com/wp-content/uploads/images/products/products-University-of-CA-Los-Angeles-Seal.jpg
+
+output: 
+  posterdown::posterdown_html:
+    self_contained: false
+bibliography: packages.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Introduction
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt finibus quam sit amet gravida. Fusce eu tellus eget libero euismod mollis et a dolor. Integer elementum et tortor sit amet cursus. In lacinia, felis eu rhoncus bibendum, nisl urna ultrices est, ac finibus ante massa efficitur mauris. Proin eu blandit erat. Cras at rhoncus arcu, eget porttitor lacus. Donec rutrum nulla vitae augue auctor condimentum in a nisl. Praesent eu metus at nulla fermentum lacinia. [Brand](http://brand.ucla.edu/identity/colors)
+
+```{r, echo = FALSE,warning=FALSE,out.width='100%', fig.align='center', fig.cap='Graph', fig.height=5,message=FALSE}
+library(dplyr)
+library(babynames)
+
+# Keep only 3 names
+don <- babynames %>% 
+  filter(name %in% c("Ashley", "Patricia", "Helen")) %>%
+  filter(sex=="F")
+
+
+library(ggplot2) 
+library(gganimate)
+library(hrbrthemes)
+library(gifski)
+library(png)
+
+# Plot
+don %>%
+  ggplot( aes(x=year, y=n, group=name, color=name)) +
+    geom_line() +
+    geom_point() +
+    ggtitle("Popularity of American names in the previous 30 years") +
+    theme_ipsum() +
+    ylab("Number of babies born") +
+    transition_reveal(year)
+
+
+
+# Save at gif:
+anim_save("287-smooth-animation-with-tweenr.gif")
+```
+
+
+## Objectives
+
+1. Vivamus consectetur pharetra mattis. Sed eros libero, aliquam sit amet orci eu, congue pretium ipsum.
+2. Fusce dignissim dictum nisi eget mollis.
+3. Sed eros libero, aliquam sit amet orci eu, congue pretium ipsum.
+
+
+
+# Methods
+
+Aliquam odio dolor, maximus sit amet venenatis eget, posuere eget dui. Maecenas sit amet rhoncus dolor, eu dapibus nibh. Sed efficitur eros velit, nec rutrum velit feugiat in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam feugiat porta risus, ullamcorper iaculis enim finibus accumsan. Duis a pharetra nulla. Sed efficitur luctus diam at tincidunt. [graph](https://www.r-graph-gallery.com/wordcloud.html)
+
+```{r,message=FALSE,out.width='90%', fig.align='center', fig.cap='Turkey Test', fig.height=5}
+
+library(multcompView)
+ 
+# Create data
+set.seed(1)
+treatment <- rep(c("A", "B", "C", "D", "E"), each=20) 
+value=c( sample(2:5, 20 , replace=T) , sample(6:10, 20 , replace=T), sample(1:7, 20 , replace=T), sample(3:10, 20 , replace=T) , sample(10:20, 20 , replace=T) )
+data=data.frame(treatment,value)
+ 
+# What is the effect of the treatment on the value ?
+model=lm( data$value ~ data$treatment )
+ANOVA=aov(model)
+ 
+# Tukey test to study each pair of treatment :
+TUKEY <- TukeyHSD(x=ANOVA, 'data$treatment', conf.level=0.95)
+ 
+# Tuckey test representation :
+plot(TUKEY , las=1 , col="brown")
+
+```
+
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{align*}
+  f(x) &= x^2\\
+  g(x) &= \frac{1}{x}\\
+  F(x) &= \int^a_b \frac{1}{3}x^3
+\end{align*}
+
+\end{document}
+
+# Results
+
+Nunc euismod nunc nec enim imperdiet varius. Donec auctor tempus elit id posuere. Aenean elementum semper malesuada. Vivamus facilisis, urna id viverra tincidunt, tortor magna volutpat dui, a tempor justo sapien id justo. In quam quam, sagittis at metus semper, ornare porttitor urna. Vestibulum ut sapien sed dui porta blandit. [@wiki](https://github.com/posterdown/wiki)
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam egestas quam massa, sit amet commodo purus consequat eget. Nam sed sollicitudin mauris. Quisque dapibus diam non justo ornare dictum. Ut sed augue in elit ultrices bibendum. Nam a fringilla sem, ut suscipit lorem.
+
+```{r mytable, out.width='70%'}
+knitr::kable(mtcars[1:10,1:7], caption = 'Motor Trend Car Road Tests',align = 'c',"html")
+```
+
+Or with figures: Figure \@ref(fig:standard-plot), or Figure \@ref(fig:morefigs), or Figure \@ref(fig:morefigs2).
+
+```{r standard-plot, out.width='80%', fig.align='center', fig.cap='Distribution of Weight', fig.height=5}
+plot(density(mtcars[,6]), main = "Distribution of Weight")
+```
+
+```{r morefigs, out.width='80%', echo=TRUE, fig.cap='Gross Horsepower', fig.height=8}
+data <- mtcars
+plot(x = data$hp, 
+     y = data$wt, 
+     col = data$wt,
+     pch = 19, 
+     cex = 5,
+     xlab = "Gross horsepower",
+     ylab = "Weight (1000 lbs)")
+abline(h = 2, lty = 2, col = "black")
+abline(h = 3, lty = 2, col = "red")
+abline(h = 4, lty = 2, col = "green")
+abline(h = 5, lty = 2, col = "blue")
+
+```
+
+```{r morefigs2, out.width='100%', fig.cap='High school for Jonathan', fig.height=8}
+# Library
+library(fmsb)
+ 
+# Create data: note in High school for Jonathan:
+data <- as.data.frame(matrix( sample( 2:20 , 10 , replace=T) , ncol=10))
+colnames(data) <- c("math" , "english" , "biology" , "music" , "R-coding", "data-viz" , "french" , "physic", "statistic", "sport" )
+ 
+# To use the fmsb package, I have to add 2 lines to the dataframe: the max and min of each topic to show on the plot!
+data <- rbind(rep(20,10) , rep(0,10) , data)
+ 
+# Check your data, it has to look like this!
+# head(data)
+
+# Custom the radarChart !
+radarchart( data  , axistype=1 , 
+ 
+    #custom polygon
+    pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 , 
+ 
+    #custom the grid
+    cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,20,5), cglwd=0.8,
+ 
+    #custom labels
+    vlcex=0.8 
+    )
+ 
+```
+
+# Next Steps
+
+Aliquam sed faucibus risus, quis efficitur erat. Vestibulum semper mauris quis tempus eleifend. Aliquam sagittis dictum ipsum, quis viverra ligula eleifend ut. Curabitur sagittis vitae arcu eget faucibus. In non elementum felis. Duis et aliquam nunc. Nunc pulvinar sapien nunc, vel pretium nisi efficitur in. Fusce fringilla maximus leo et maximus. Fusce at ligula laoreet, iaculis mi at, auctor odio. Praesent sed elementum justo. Aenean consectetur risus rhoncus tincidunt efficitur. Praesent dictum mauris at diam maximus maximus.[@R-pagedown].
+
+# Conclusion
+
+Try `posterdown` out! Hopefully you like it!
+
+```{r, include=FALSE}
+knitr::write_bib(c('knitr','rmarkdown','posterdown','pagedown'), 'packages.bib')
+```
+
+# References
