@@ -6,10 +6,9 @@ Put your name in the Team Section and comment
 
 ## Team
 Fatima Kabbaj
-<br/>Jackson Torres
-<br/>Shuangning Yang
-
+Shuangning Yang
+Jackson Torres
 ## Comments
 yay found it
-<br/>Let's go team, we got this!
+Let's go team, we got this!
 Finally!
