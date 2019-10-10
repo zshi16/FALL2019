@@ -6,8 +6,10 @@ Put your name in the Team Section and comment
 
 ## Team
 Fatima Kabbaj
-<br/>Jackson Torres
-
+Jackson Torres
 ## Comments
+yay found it
+Let's go team, we got this!
+<br/>Jackson Torres
 yay found it
 <br/>Let's go team, we got this!
