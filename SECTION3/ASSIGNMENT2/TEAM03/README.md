@@ -5,6 +5,8 @@ You found it!  Add text to as if it were a regular R Markdown file.
 Put your name in the Team Section and comment
 
 ## Team
-
+Citlally Reynoso
+Chloe Wang
 
 ## Comments
+Hello my name is Citlally Reynoso!

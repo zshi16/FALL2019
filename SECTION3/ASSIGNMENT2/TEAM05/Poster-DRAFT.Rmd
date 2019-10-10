@@ -1,0 +1,95 @@
+---
+title: Generate Reproducible & Live HTML and PDF Conference Posters Using RMarkdown
+author:
+  - name: Anna Lee
+    affil: 1
+  - name: Situ Ma
+    affil: 1
+  - name: Peijiu Qian
+    affil: 1
+  - name: Yi Lin Ye
+    affil: 1
+affiliation:
+  - num: 1
+    address: Department of Statistics, UCLA
+# - num: 2
+#   address: Some other affiliation
+column_numbers: 3
+font_family: Copperplate
+primary_colour: "#2774AE"
+secondary_colour: "#FFD100"
+accent_colour: "#003B5C"
+affiliation_textcol: "#FFD100"
+logoright_name: https&#58;//raw.githubusercontent.com/brentthorne/posterdown/master/images/betterhexlogo.png
+logoleft_name: http&#58;//www.firststar.org/wp-content/uploads/2015/02/ucla1.jpg
+## https://ev0awwmgj4-flywheel.netdna-ssl.com/wp-content/uploads/images/products/products-University-of-CA-Los-Angeles-Seal.jpg
+output: 
+  posterdown::posterdown_html:
+    self_contained: false
+bibliography: packages.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Introduction
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt finibus quam sit amet gravida. Fusce eu tellus eget libero euismod mollis et a dolor. Integer elementum et tortor sit amet cursus. In lacinia, felis eu rhoncus bibendum, nisl urna ultrices est, ac finibus ante massa efficitur mauris. Proin eu blandit erat. Cras at rhoncus arcu, eget porttitor lacus. Donec rutrum nulla vitae augue auctor condimentum in a nisl. Praesent eu metus at nulla fermentum lacinia.
+
+## Objectives
+
+1. Vivamus consectetur pharetra mattis. Sed eros libero, aliquam sit amet orci eu, congue pretium ipsum.
+2. Fusce dignissim dictum nisi eget mollis.
+3. Sed eros libero, aliquam sit amet orci eu, congue pretium ipsum.
+
+# Methods
+
+Aliquam odio dolor, maximus sit amet venenatis eget, posuere eget dui. Maecenas sit amet rhoncus dolor, eu dapibus nibh. Sed efficitur eros velit, nec rutrum velit feugiat in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam feugiat porta risus, ullamcorper iaculis enim finibus accumsan. Duis a pharetra nulla. Sed efficitur luctus diam at tincidunt. 
+
+# Results
+
+Nunc euismod nunc nec enim imperdiet varius. Donec auctor tempus elit id posuere. Aenean elementum semper malesuada. Vivamus facilisis, urna id viverra tincidunt, tortor magna volutpat dui, a tempor justo sapien id justo. In quam quam, sagittis at metus semper, ornare porttitor urna. Vestibulum ut sapien sed dui porta blandit. 
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam egestas quam massa, sit amet commodo purus consequat eget. Nam sed sollicitudin mauris. Quisque dapibus diam non justo ornare dictum. Ut sed augue in elit ultrices bibendum. Nam a fringilla sem, ut suscipit lorem.
+
+```{r mytable, out.width='80%'}
+knitr::kable(mtcars[1:10,1:7], caption = 'Motor Trend Car Road Tests',align = 'c',"html")
+```
+
+Or with figures: Figure \@ref(fig:standard-plot), or Figure \@ref(fig:morefigs).
+
+```{r standard-plot, out.width='80%', fig.align='center', fig.cap='Figure 1', fig.height=5}
+plot(density(mtcars[,6]), main = "Distribution of Weight")
+```
+
+```{r morefigs, out.width='80%', echo=TRUE, fig.cap='Figure 2', fig.height=5}
+data <- mtcars
+
+plot(x = data$hp, 
+     y = data$wt, 
+     col = data$wt,
+     pch = 19, 
+     cex = 5,
+     xlab = "Gross horsepower",
+     ylab = "Weight (1000 lbs)")
+abline(h = 2, lty = 2, col = "black")
+abline(h = 3, lty = 2, col = "red")
+abline(h = 4, lty = 2, col = "green")
+abline(h = 5, lty = 2, col = "blue")
+```
+
+# Next Steps
+
+Aliquam sed faucibus risus, quis efficitur erat. Vestibulum semper mauris quis tempus eleifend. Aliquam sagittis dictum ipsum, quis viverra ligula eleifend ut. Curabitur sagittis vitae arcu eget faucibus. In non elementum felis. Duis et aliquam nunc. Nunc pulvinar sapien nunc, vel pretium nisi efficitur in. Fusce fringilla maximus leo et maximus. Fusce at ligula laoreet, iaculis mi at, auctor odio. Praesent sed elementum justo. Aenean consectetur risus rhoncus tincidunt efficitur. Praesent dictum mauris at diam maximus maximus.
+
+# Conclusion
+
+Try `posterdown` out! Hopefully you like it!
+
+```{r, include=FALSE}
+knitr::write_bib(c('knitr','rmarkdown','posterdown','pagedown'), 'packages.bib')
+```
+
+# References
+
