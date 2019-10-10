@@ -7,13 +7,15 @@ Put your name in the Team Section and comment
 ## Team
 
 Hi, I am Jiayu Lyu (Nicole).
-Hi, I am Qianqian Hunag (Chain)
+Indoo Park
 
-This is Qichen (Sam) Liang.
 
 
 
 ## Comments
 I spent 15 minutes trying to find this file. 
+Hi, I am Qianqian Hunag (Chain)
+
+This is Qichen (Sam) Liang.
 
 
