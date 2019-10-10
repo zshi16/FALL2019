@@ -7,5 +7,7 @@ Put your name in the Team Section and comment
 ## Team
 Citlally Reynoso
 
+Chloe Wang
+
 ## Comments
 Hello my name is Citlally Reynoso!

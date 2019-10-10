@@ -5,8 +5,9 @@ You found it!  Add text to as if it were a regular R Markdown file.
 Put your name in the Team Section and comment
 
 ## Team
-### Samuel Chen
-### Tingyi Lu
+Tingyi Lu
+Samuel Chen
+Monserrat Ibarra
 
 ## Comments
 ### Hello friends

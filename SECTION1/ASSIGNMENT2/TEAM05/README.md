@@ -11,9 +11,17 @@ Put your name in the Team Section and comment
 
 -Kayla Schroeder
 
+-Tiffany Hsu
+
+-Allison Ocelo
+
 ## Comments
 
 -I like sushi
 
 -Not really sure what to say, but here's my comment!
+
+-Tiffany's comment
+
+-Hi this is Allison's comment!
 
