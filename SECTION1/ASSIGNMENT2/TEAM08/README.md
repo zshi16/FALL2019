@@ -7,10 +7,9 @@ Put your name in the Team Section and comment
 ## Team
 1. Yuqi Meng
 2. Rose Din
-xilin tan
+3.xilin tan
 
 ## Comments
-seafood
 1. I like spicy food!
 2. One of my favorite songs is "Halo" by Beyonce.
-
+3. I like seafood
