@@ -6,5 +6,8 @@ Put your name in the Team Section and comment
 
 ## Team
 
+Kaixin Wang
 
 ## Comments
+
+Kaixin is a senior undergraduate in Statistics.

@@ -6,9 +6,18 @@ Put your name in the Team Section and comment
 
 ## Team
 
-- Kayla Schroeder
 
+-Shami Shaji
+
+-Kayla Schroeder
+
+-Tiffany Hsu
 
 ## Comments
 
-- Not really sure what to say, but here's my comment!
+-I like sushi
+
+-Not really sure what to say, but here's my comment!
+
+-Tiffany's comment
+

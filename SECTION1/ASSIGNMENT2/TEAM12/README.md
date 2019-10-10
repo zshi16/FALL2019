@@ -8,6 +8,10 @@ Put your name in the Team Section and comment
 
 Patricia Njo
 
+Xinyi Xu
+
 ## Comments
 
 Requesting to be a member of STATS140SL
+
+Hi！This is Xinyi

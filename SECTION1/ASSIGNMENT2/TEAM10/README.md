@@ -12,10 +12,14 @@ This awesome team includes:
 - Hui Yu Chuang
 
 ## Comments
-=======
-This is team 10.
 
-Fruit is great!
+=======
+
+This is team 10. 
+
+All team members are very supportive! Hope we can become teammates again! :)
+
+Fruit is great! Stay healthy!!
 
 ![FRUIT](https://www.irishtimes.com/polopoly_fs/1.3923226.1560339148!/image/image.jpg_gen/derivatives/box_620_330/image.jpg)
 
