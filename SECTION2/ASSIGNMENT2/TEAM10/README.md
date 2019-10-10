@@ -7,9 +7,8 @@ Put your name in the Team Section and comment
 ## Team
 
 Hi, I am Jiayu Lyu (Nicole).
+This is Janice Li:)
 Indoo Park
-
-
 
 
 ## Comments
