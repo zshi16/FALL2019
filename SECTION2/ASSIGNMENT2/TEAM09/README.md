@@ -6,7 +6,7 @@ Put your name in the Team Section and comment
 
 ## Team
 Xingruo (Summer) Zhang  
-Yung-Chieh(Angela) Chen
+Yung-Chieh(Angela) Chen  
 Xinlin Liu
 Qin Hu
 
