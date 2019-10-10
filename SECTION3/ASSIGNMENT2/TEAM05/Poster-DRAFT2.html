@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--
+Font-awesome icons ie github or twitter
+-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+
+<!--
+Google fonts api stuff
+-->
+<link href='https://fonts.googleapis.com/css?family=Copperplate' rel='stylesheet'>
+
+
+
+<title>Generate Reproducible &amp; Live HTML and PDF Conference Posters Using RMarkdown</title>
+
+
+
+<style type="text/css">a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */</style>
+
+<style>
+@page {
+size: 45in 38in;
+margin: 0;
+padding: 0;
+}
+body {
+margin: 0;
+font-size: 45px;
+width: 45in;
+height: 38in;
+padding: 0;
+text-align: justify;
+font-family: Copperplate;
+}
+.poster_wrap {
+width: 45in;
+height: 38in;
+padding: 0cm;
+}
+.title_container {
+width: 45in;
+height: calc(38in * 0.15);
+overflow: hidden;
+background-color: #8BB8E8;
+border: 0.5cm solid #C3D7EE;
+}
+.logo_left {
+float: left;
+width: 10%;
+height: 100%;
+background-color: #8BB8E8;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.logo_right {
+float: right;
+width: 10%;
+height: 100%;
+background-color: #8BB8E8;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.poster_title {
+text-align: center;
+position: relative;
+float: left;
+width: 80%;
+height: 100%;
+color: #FFFFFF;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+}
+#title {
+font-family: Copperplate;
+}
+/* unvisited link */
+a:link {
+color: #FFD100;
+}
+.mybreak {
+  break-before: column;
+}
+/* visited link */
+a:visited {
+color: #FFD100;
+}
+
+/* mouse over link */
+a:hover {
+color: #FFD100;
+}
+
+/* selected link */
+a:active {
+color: #FFD100;
+}
+.poster_body {
+-webkit-column-count: 4; /* Chrome, Safari, Opera */
+-moz-column-count: 4; /* Firefox */
+column-count: 4;
+-webkit-column-fill: auto;
+-moz-column-fill: auto;
+column-fill: auto;
+-webkit-column-rule-width: 1mm;
+-moz-column-rule-width: 1mm;
+column-rule-width: 1mm;
+-webkit-column-rule-style: dashed;
+-moz-column-rule-style: dashed;
+column-rule-style: dashed;
+-webkit-column-rule-color: #8BB8E8;
+-moz-column-rule-color: #8BB8E8;
+column-rule-color: #8BB8E8;
+column-gap: 0.5cm;
+padding-left: calc(0.5cm / 2);
+padding-right: calc(0.5cm / 2);
+height: 100%;
+color: #000000
+background-color: #ffffff;
+}
+.poster_title h1 {
+font-size: 75pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+.poster_body_wrap{
+width: calc(45in + 0.5cm + 0.5cm);
+height: calc(38in * 0.83);
+padding-top: calc(38in * 0.005);
+padding-bottom: calc(38in * 0.01);
+background-color: #ffffff;
+}
+.poster_title h3 {
+color: #FFD100;
+font-size: 50pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+.poster_title h3 > sup {
+  font-size: 35pt;
+  margin-left: 0.02em;
+}
+.poster_title h5 {
+color: #FFB81C;
+font-size: 35pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+img {
+margin-top: 2cm;
+margin-bottom: 0;
+}
+.section {
+  padding: 0.2em;
+}
+.poster_body h1 {
+text-align: center;
+color: #FFFFFF;
+font-size: 65pt;
+border: 2mm solid #C3D7EE;
+background-color: #8BB8E8;
+border-radius: 8mm 0mm;
+margin-top: 2mm;
+margin-bottom: 2mm;
+font-weight: normal;
+}
+.poster_body h2 {
+color: #000000;
+font-size: 40pt;
+padding-left: 4mm;
+font-weight: normal;
+}
+.span {
+width: 200%;
+}
+/* center align leaflet map,
+from https://stackoverflow.com/questions/52112119/center-leaflet-in-a-rmarkdown-document */
+.html-widget {
+margin: auto;
+position: sticky;
+margin-top: 2cm;
+margin-bottom: 2cm;
+}
+.leaflet.html-widget.html-widget-static-bound.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+position: sticky;
+width: 100%;
+}
+pre.sourceCode.r {
+background-color: #dddddd40;
+border-radius: 4mm;
+padding: 4mm;
+width: 75%;
+/* align-items: center; */
+margin: auto;
+padding-left: 2cm;
+}
+code.sourceCode.r{
+background-color: transparent;
+font-size: 20pt;
+border-radius: 2mm;
+}
+.caption {
+font-size: 25pt;
+}
+.table caption {
+font-size: 25pt;
+padding-bottom: 3mm;
+
+}
+code {
+font-size: 1em;
+font-family: monospace;
+background-color: #C3D7EE24;
+color: #8BB8E8;
+padding: 1.2mm;
+border-radius: 2mm;
+}
+.poster_title code {
+font-size: 1em;
+}
+table {
+font-size: 40px;
+margin: auto;
+border-top: 3px solid #666;
+border-bottom: 3px solid #666;
+}
+table thead th {
+border-bottom: 3px solid #ddd;
+}
+td {
+padding: 8px;
+}
+th {
+padding: 15px;
+}
+caption {
+margin-bottom: 10px;
+}
+.poster_body p {
+margin-right: 4mm;
+margin-left: 4mm;
+margin-top: 6mm;
+margin-bottom: 10mm;
+}
+.poster_body ol {
+margin-right: 4mm;
+margin-left: 4mm;
+}
+#ul {
+margin-right: 4mm;
+margin-left: 4mm;
+}
+.references p {
+font-size: 20pt;
+}
+.orcid img {
+  width: 1em;
+}
+</style>
+</head>
+<body>
+
+
+<div class="poster_wrap">
+<div class="title_container">
+<!-- Left Logo  -->
+<div class="logo_left">
+<img src= 'http://www.firststar.org/wp-content/uploads/2015/02/ucla1.jpg' style="width: 80%">
+</div>
+<!-- Poster Title -->
+<div class= "poster_title">
+<h1 id="title">Generate Reproducible &amp; Live HTML and PDF Conference Posters Using RMarkdown</h1>
+<h3 id="author">Anna Lee<sup>1</sup>, Situ Ma<sup>1</sup>, Peijiu Qian<sup>1</sup>, Yi Lin Ye<sup>1</sup></h3><br>
+<h5 id="affiliation"><sup>1</sup> Department of Statistics, UCLA</h5>
+</div>
+<!-- Right Logo  -->
+<div class="logo_right">
+<img src=https://raw.githubusercontent.com/brentthorne/posterdown/master/images/betterhexlogo.png style="width: 80%">
+</div>
+</div>
+
+<div class='poster_body_wrap'>
+<div class='poster_body'>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt finibus quam sit amet gravida. Fusce eu tellus eget libero euismod mollis et a dolor. Integer elementum et tortor sit amet cursus. In lacinia, felis eu rhoncus bibendum, nisl urna ultrices est, ac finibus ante massa efficitur mauris. Proin eu blandit erat. Cras at rhoncus arcu, eget porttitor lacus. Donec rutrum nulla vitae augue auctor condimentum in a nisl. Praesent eu metus at nulla fermentum lacinia. <a href="http://brand.ucla.edu/identity/colors">Brand</a></p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
+<img src="Poster-DRAFT2_files/figure-html/unnamed-chunk-1-1.gif" alt="Graph" width="100%" />
+<p class="caption">
+Figure 1: Graph
+</p>
+</div>
+<div id="objectives" class="section level2">
+<h2>Objectives</h2>
+<ol style="list-style-type: decimal">
+<li>Vivamus consectetur pharetra mattis. Sed eros libero, aliquam sit amet orci eu, congue pretium ipsum.</li>
+<li>Fusce dignissim dictum nisi eget mollis.</li>
+<li>Sed eros libero, aliquam sit amet orci eu, congue pretium ipsum.</li>
+</ol>
+</div>
+</div>
+<div id="methods" class="section level1">
+<h1>Methods</h1>
+<p>Aliquam odio dolor, maximus sit amet venenatis eget, posuere eget dui. Maecenas sit amet rhoncus dolor, eu dapibus nibh. Sed efficitur eros velit, nec rutrum velit feugiat in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam feugiat porta risus, ullamcorper iaculis enim finibus accumsan. Duis a pharetra nulla. Sed efficitur luctus diam at tincidunt. <a href="https://www.r-graph-gallery.com/wordcloud.html">graph</a></p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<img src="Poster-DRAFT2_files/figure-html/unnamed-chunk-2-1.png" alt="Turkey Test" width="90%" />
+<p class="caption">
+Figure 2: Turkey Test
+</p>
+</div>
+
+</div>
+<div id="results" class="section level1">
+<h1>Results</h1>
+<p>Nunc euismod nunc nec enim imperdiet varius. Donec auctor tempus elit id posuere. Aenean elementum semper malesuada. Vivamus facilisis, urna id viverra tincidunt, tortor magna volutpat dui, a tempor justo sapien id justo. In quam quam, sagittis at metus semper, ornare porttitor urna. Vestibulum ut sapien sed dui porta blandit. <span class="citation">(<span class="citeproc-not-found" data-reference-id="wiki"><strong>???</strong></span>)</span>(<a href="https://github.com/posterdown/wiki" class="uri">https://github.com/posterdown/wiki</a>)</p>
+<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam egestas quam massa, sit amet commodo purus consequat eget. Nam sed sollicitudin mauris. Quisque dapibus diam non justo ornare dictum. Ut sed augue in elit ultrices bibendum. Nam a fringilla sem, ut suscipit lorem.</p>
+<table>
+<caption>
+<span id="tab:mytable">Table 1: </span>Motor Trend Car Road Tests
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:center;">
+mpg
+</th>
+<th style="text-align:center;">
+cyl
+</th>
+<th style="text-align:center;">
+disp
+</th>
+<th style="text-align:center;">
+hp
+</th>
+<th style="text-align:center;">
+drat
+</th>
+<th style="text-align:center;">
+wt
+</th>
+<th style="text-align:center;">
+qsec
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Mazda RX4
+</td>
+<td style="text-align:center;">
+21.0
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+160.0
+</td>
+<td style="text-align:center;">
+110
+</td>
+<td style="text-align:center;">
+3.90
+</td>
+<td style="text-align:center;">
+2.620
+</td>
+<td style="text-align:center;">
+16.46
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mazda RX4 Wag
+</td>
+<td style="text-align:center;">
+21.0
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+160.0
+</td>
+<td style="text-align:center;">
+110
+</td>
+<td style="text-align:center;">
+3.90
+</td>
+<td style="text-align:center;">
+2.875
+</td>
+<td style="text-align:center;">
+17.02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Datsun 710
+</td>
+<td style="text-align:center;">
+22.8
+</td>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+108.0
+</td>
+<td style="text-align:center;">
+93
+</td>
+<td style="text-align:center;">
+3.85
+</td>
+<td style="text-align:center;">
+2.320
+</td>
+<td style="text-align:center;">
+18.61
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hornet 4 Drive
+</td>
+<td style="text-align:center;">
+21.4
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+258.0
+</td>
+<td style="text-align:center;">
+110
+</td>
+<td style="text-align:center;">
+3.08
+</td>
+<td style="text-align:center;">
+3.215
+</td>
+<td style="text-align:center;">
+19.44
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hornet Sportabout
+</td>
+<td style="text-align:center;">
+18.7
+</td>
+<td style="text-align:center;">
+8
+</td>
+<td style="text-align:center;">
+360.0
+</td>
+<td style="text-align:center;">
+175
+</td>
+<td style="text-align:center;">
+3.15
+</td>
+<td style="text-align:center;">
+3.440
+</td>
+<td style="text-align:center;">
+17.02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valiant
+</td>
+<td style="text-align:center;">
+18.1
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+225.0
+</td>
+<td style="text-align:center;">
+105
+</td>
+<td style="text-align:center;">
+2.76
+</td>
+<td style="text-align:center;">
+3.460
+</td>
+<td style="text-align:center;">
+20.22
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Duster 360
+</td>
+<td style="text-align:center;">
+14.3
+</td>
+<td style="text-align:center;">
+8
+</td>
+<td style="text-align:center;">
+360.0
+</td>
+<td style="text-align:center;">
+245
+</td>
+<td style="text-align:center;">
+3.21
+</td>
+<td style="text-align:center;">
+3.570
+</td>
+<td style="text-align:center;">
+15.84
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Merc 240D
+</td>
+<td style="text-align:center;">
+24.4
+</td>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+146.7
+</td>
+<td style="text-align:center;">
+62
+</td>
+<td style="text-align:center;">
+3.69
+</td>
+<td style="text-align:center;">
+3.190
+</td>
+<td style="text-align:center;">
+20.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Merc 230
+</td>
+<td style="text-align:center;">
+22.8
+</td>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+140.8
+</td>
+<td style="text-align:center;">
+95
+</td>
+<td style="text-align:center;">
+3.92
+</td>
+<td style="text-align:center;">
+3.150
+</td>
+<td style="text-align:center;">
+22.90
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Merc 280
+</td>
+<td style="text-align:center;">
+19.2
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+167.6
+</td>
+<td style="text-align:center;">
+123
+</td>
+<td style="text-align:center;">
+3.92
+</td>
+<td style="text-align:center;">
+3.440
+</td>
+<td style="text-align:center;">
+18.30
+</td>
+</tr>
+</tbody>
+</table>
+<p>Or with figures: Figure <a href="#fig:standard-plot">3</a>, or Figure <a href="#fig:morefigs">4</a>, or Figure <a href="#fig:morefigs2">5</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:standard-plot"></span>
+<img src="Poster-DRAFT2_files/figure-html/standard-plot-1.png" alt="Distribution of Weight" width="80%" />
+<p class="caption">
+Figure 3: Distribution of Weight
+</p>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">data &lt;-<span class="st"> </span>mtcars</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">plot</span>(<span class="dt">x =</span> data<span class="op">$</span>hp, </a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">     <span class="dt">y =</span> data<span class="op">$</span>wt, </a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">     <span class="dt">col =</span> data<span class="op">$</span>wt,</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">     <span class="dt">pch =</span> <span class="dv">19</span>, </a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">     <span class="dt">cex =</span> <span class="dv">5</span>,</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">     <span class="dt">xlab =</span> <span class="st">&quot;Gross horsepower&quot;</span>,</a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">     <span class="dt">ylab =</span> <span class="st">&quot;Weight (1000 lbs)&quot;</span>)</a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">2</span>, <span class="dt">lty =</span> <span class="dv">2</span>, <span class="dt">col =</span> <span class="st">&quot;black&quot;</span>)</a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">3</span>, <span class="dt">lty =</span> <span class="dv">2</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)</a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">4</span>, <span class="dt">lty =</span> <span class="dv">2</span>, <span class="dt">col =</span> <span class="st">&quot;green&quot;</span>)</a>
+<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">5</span>, <span class="dt">lty =</span> <span class="dv">2</span>, <span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>)</a></code></pre></div>
+<div class="figure"><span id="fig:morefigs"></span>
+<img src="Poster-DRAFT2_files/figure-html/morefigs-1.png" alt="Gross Horsepower" width="80%" />
+<p class="caption">
+Figure 4: Gross Horsepower
+</p>
+</div>
+<div class="figure"><span id="fig:morefigs2"></span>
+<img src="Poster-DRAFT2_files/figure-html/morefigs2-1.png" alt="High school for Jonathan" width="100%" />
+<p class="caption">
+Figure 5: High school for Jonathan
+</p>
+</div>
+</div>
+<div id="next-steps" class="section level1">
+<h1>Next Steps</h1>
+<p>Aliquam sed faucibus risus, quis efficitur erat. Vestibulum semper mauris quis tempus eleifend. Aliquam sagittis dictum ipsum, quis viverra ligula eleifend ut. Curabitur sagittis vitae arcu eget faucibus. In non elementum felis. Duis et aliquam nunc. Nunc pulvinar sapien nunc, vel pretium nisi efficitur in. Fusce fringilla maximus leo et maximus. Fusce at ligula laoreet, iaculis mi at, auctor odio. Praesent sed elementum justo. Aenean consectetur risus rhoncus tincidunt efficitur. Praesent dictum mauris at diam maximus maximus.<span class="citation">(Xie, Lesur, and Thorne 2019)</span>.</p>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>Try <code>posterdown</code> out! Hopefully you like it!</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-R-pagedown">
+<p>Xie, Yihui, Romain Lesur, and Brent Thorne. 2019. <em>Pagedown: Paginate the Html Output of R Markdown with Css for Print</em>. <a href="https://CRAN.R-project.org/package=pagedown">https://CRAN.R-project.org/package=pagedown</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>
