@@ -8,4 +8,11 @@ Put your name in the Team Section and comment
 
 Hi, I am Jiayu Lyu (Nicole).
 
+This is Qichen (Sam) Liang.
+
+
+
 ## Comments
+I spent 15 minutes trying to find this file. 
+
+
