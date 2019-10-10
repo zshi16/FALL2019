@@ -5,10 +5,10 @@ You found it!  Add text to as if it were a regular R Markdown file.
 Put your name in the Team Section and comment
 
 ## Team
-
+Haiquan Zhong
 Mengtong Zhang
 James Elisaldez
 ## Comments
-
-I like watermelon
 ""You miss **100%** of the shots you don't take" -Wayne Gretzky" -*Michael Scott*
+I like watermelon
+i like rap
