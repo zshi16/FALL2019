@@ -7,6 +7,8 @@ Put your name in the Team Section and comment
 ## Team
 
 Mengtong Zhang
+Haiquan Zhong
 ## Comments
 
 I like watermelon
+i like rap
