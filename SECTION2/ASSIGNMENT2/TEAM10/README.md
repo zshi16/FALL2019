@@ -7,5 +7,6 @@ Put your name in the Team Section and comment
 ## Team
 
 Hi, I am Jiayu Lyu (Nicole).
+Hi, I am Qianqian Hunag (Chain)
 
 ## Comments
