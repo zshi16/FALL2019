@@ -6,6 +6,7 @@ Put your name in the Team Section and comment
 
 ## Team
 Samuel Chen
+Monserrat Ibarra
 
 ## Comments
 Hello friends
