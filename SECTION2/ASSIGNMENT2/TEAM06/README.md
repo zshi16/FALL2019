@@ -10,8 +10,14 @@ Wang, Zheng
 
 Banatwala, Azeem
 
+Sharma, Nikhil
+
+Lara, Edward
+
 ## Comments
 
 Wang, Zheng
+
+Lara, Edward 
 
 Team 06 Member List

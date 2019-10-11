@@ -10,9 +10,12 @@ Tuyen Bich Duong
 Jackson Torres
 Wenxin Zhou
 Rosy Zhou
+Fanxing Yu
 ## Comments
 Chengcheng Xu
 Hi, this is Tuyen. Nice to meet you all. 
 Let's go team, we got this!
 Hi, this is Wenxin.
 YEAHHHH
+yeahhh!!!
+go!!
