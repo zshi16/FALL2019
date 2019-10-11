@@ -8,6 +8,7 @@ Put your name in the Team Section and comment
 Tingyi Lu
 Samuel Chen
 Monserrat Ibarra
+Nicholas Ortega
 
 ## Comments
 ### Hello friends
