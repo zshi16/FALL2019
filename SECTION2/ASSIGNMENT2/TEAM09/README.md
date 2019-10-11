@@ -11,3 +11,4 @@ Xinlin Liu
 Qin Hu
 
 ## Comments
+We used ggplots and UCLA colors in our poster!
