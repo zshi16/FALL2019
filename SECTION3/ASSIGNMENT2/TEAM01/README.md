@@ -8,8 +8,10 @@ Put your name in the Team Section and comment
 Bryan Kim
 Simon Shen
 Kirk Lam
+Haocheng Bi
 
 ## Comments
 Hi, this is Simon
 Hello :)
 Hi guys!
+Hey I am back! - HB
