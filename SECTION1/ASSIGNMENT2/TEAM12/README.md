@@ -12,6 +12,8 @@ Xinyi Xu
 
 Yingyi Zhu
 
+Yuchen Zhang
+
 ## Comments
 
 Requesting to be a member of STATS140SL
