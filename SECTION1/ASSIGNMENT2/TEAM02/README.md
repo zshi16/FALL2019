@@ -6,10 +6,12 @@ Put your name in the Team Section and comment
 
 ## Team
 
-Kaixin Wang, Joy Wang
+Kaixin Wang, Joy Wang, Suzie Choi
 
 ## Comments
 
 Kaixin is a senior undergraduate in Statistics.
 
 Joy is a senior undergraduate in Statistics.
+
+Suzie is a senior undergraduate in Statistics.
