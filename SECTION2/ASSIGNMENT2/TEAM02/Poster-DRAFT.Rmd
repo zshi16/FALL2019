@@ -37,6 +37,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Welcome to `posterdown` ! This is my attempt to provide a semi-smooth workflow for those who wish to take their R Markdown skills to the conference world. Most features from R Markdown are available in this package such as Markdown section notation, figure captioning, and even citations like this one [@R-rmarkdown]. The rest of this example poster will show how you can insert typical conference poster features into your own document. 
 
+# Image
+```{r pressure, echo=FALSE, fig.cap="A caption", out.width = '100%'}
+knitr::include_graphics("https://ca-times.brightspotcdn.com/dims4/default/4d3b462/2147483647/strip/true/crop/1000x650+0+0/resize/840x546!/quality/90/?url=https%3A%2F%2Fca-times.brightspotcdn.com%2F1a%2Fce%2F1f17cb25894c5c06fcb15d4c0ce8%2Fla-sp-sn-ucla-football-defensive-line-20140813-001")
+```
+
 ## Objectives
 
 1. Easy to use reproducible poster design. 
