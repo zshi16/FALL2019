@@ -16,5 +16,5 @@ I like Hotpot
 #### A little more about Nishanth Shetty  : 
 I am a senior at the University of California, Los Angeles pursuing a major in Statistics. I am passionate about capital markets and getting to know companies both operationally and financially and have accumulated prior internship experience in Healthcare and Financial Services. I kicked off my professional experience as a Finance & Operations Intern at Soukare, a medical e-commerce company in Dubai, before going on to be a Medical Product Management Intern at Gyant, a medical AI startup in San Francisco. In my most recent position, I worked as a Spring Analyst at Pontifax AgTech, an AgTech focused Growth Equity firm. I am currently a Summer Associate at a Tech Investment 
 
-I am a huge fan of Liverpool Football club and was super stoked when we the won Champions League this past season!
+_I am a huge fan of Liverpool Football club and was super stoked when we the won Champions League this past season!_
 ![img](https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2Fc5219524-deb3-11e9-9743-db5a370481bc?fit=scale-down&source=next&width=700)
