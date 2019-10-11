@@ -1,5 +1,5 @@
 ---
-title: Generate Reproducible & Live HTML and PDF Conference Posters Using RMarkdown
+title: Support vector machine implemented by RMarkdown 
 author:
   - name: Chengcheng Xu
     affil: 1
@@ -35,7 +35,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Introduction
 
-Welcome to `posterdown` ! This is my attempt to provide a semi-smooth workflow for those who wish to take their R Markdown skills to the conference world. Most features from R Markdown are available in this package such as Markdown section notation, figure captioning, and even citations like this one [@R-rmarkdown]. The rest of this example poster will show how you can insert typical conference poster features into your own document. 
+Welcome to `Team 2 Posterdown`. In this poster, we demonstrate a simple example of how to use **Support vector machine** to decide a boundary between two groups of data, including the used dataset, R codes, and some graphical results.
 
 # Image
 ```{r pressure, echo=FALSE, fig.cap="A caption", out.width = '100%'}
@@ -44,13 +44,14 @@ knitr::include_graphics("https://ca-times.brightspotcdn.com/dims4/default/4d3b46
 
 ## Objectives
 
-1. Easy to use reproducible poster design. 
-2. Integration with R Markdown.
-3. Easy transition from `posterdown` to `pagedown` report or manuscript documents [@R-pagedown].
+1. Introduction to Support vector machine method.
+2. Implematation of R codes and functions for support vector machine.
+3. Data visualization.
 
 # Methods
 
-This package uses the same workflow approach as the R Markdown you know and love. Basically it goes from RMarkdown > Knitr > Markdown > Pandoc > HTML/CSS > PDF. You can even use the bibliography the same way [@R-posterdown].
+Using `svm()` function in R to create the boundary for a given data.
+Gaphing data and the resuts by R base plot and contour functions.
 
 # Results
 
@@ -98,7 +99,7 @@ Aliquam sed faucibus risus, quis efficitur erat. Vestibulum semper mauris quis t
 
 # Conclusion
 
-Try `posterdown` out! Hopefully you like it!
+**Support vector machine** is one of the powerful supervised learning models that can analyzed data used for classification and regression analysis. 
 
 ```{r, include=FALSE}
 knitr::write_bib(c('knitr','rmarkdown','posterdown','pagedown'), 'packages.bib')
