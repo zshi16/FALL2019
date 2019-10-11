@@ -49,30 +49,42 @@ This package uses the same workflow approach as the R Markdown you know and love
 
 # Results
 
-Usually you want to have a nice table displaying some important results that you have calculated. In `posterdown` this is as easy as using the `kable` table formatting you are probably use to as per typical R Markdown formatting.
+Let's see the results from a SVM model!
 
-You can reference tables like so: Table \@ref(tab:mytable). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat augue at velit tincidunt semper. Donec elementum porta posuere. Nullam interdum, odio at tincidunt feugiat, turpis nisi blandit eros, eu posuere risus felis non quam. Nam eget lorem odio. Duis et aliquet orci. Phasellus nec viverra est.
+```{r mytable, out.width='80%', warning=FALSE}
+library(mvtnorm)
+library(e1071)
 
-```{r mytable, out.width='80%'}
-knitr::kable(iris[1:10, 1:4], caption = 'Table caption.',align = 'c',"html")
+# generation of data
+# try making different data sets
+xa <- rmvnorm(10,mean = c(0,0), sigma = diag(2))
+xb <- rmvnorm(10, mean = c(2,2), sigma = diag(2))
+x <- rbind(xa, xb)
+df <- data.frame(x, y =c(rep('-1', 10), rep(1, 10)))
+knitr::kable(df, caption = 'Table of our data',align = 'c',"html")
+plot(df$X1,df$X2, col = df$y, pch = 19, asp = 1) # create a plot of the mixture
+
 ```
 
-Or with figures: Figure \@ref(fig:standard-plot), or Figure \@ref(fig:morefigs).
 
-```{r standard-plot, out.width='80%', fig.align='center', fig.cap='Great figure!', fig.height=5}
-plot(mtcars[1:2])
-```
 
 ```{r morefigs, out.width='80%', echo=TRUE, fig.cap='Amazing, right?!', fig.height=5}
-data <- iris
+# the SVM model. Try changing kernel type between linear/radial, and using different values of gamma and cost
+model <- svm(y ~ . , data = df, scale = FALSE, kernel = "radial", gamma = 1, cost = 1)
 
-plot(x = data$Sepal.Length, 
-     y = data$Sepal.Width, 
-     col = data$Species,
-     pch = 19, 
-     xlab = "Sepal Length (cm)",
-     ylab = "Sepal Width (cm)")
-
+# The code to plot the decision boundary
+## used to create a grid of red/black points 
+x1range <- seq(-3,4.2,by = 0.1); x2range <- seq(-2,3,by = 0.1)
+xgrid <- expand.grid(X1 = x1range, X2 = x2range)
+ygrid <- predict(model, xgrid, decision.values = TRUE)
+# extract svm's decision values for each point, which will be used to draw contour lines
+decision_vals = attributes(ygrid)$decision
+plot(xgrid, col = as.numeric(ygrid), pch = 20, cex = .2) # plot the grid of points colored by the decision
+points(df$X1, df$X2, col = df$y, pch = 19) # add the points in the original data
+## add some contour lines
+contour(x1range, x2range, matrix(decision_vals, nrow = length(x1range)), level = 0, add = TRUE, lwd = 2)
+contour(x1range, x2range, matrix(decision_vals, nrow = length(x1range)), level = 0.5, add = TRUE, col = "black")
+contour(x1range, x2range, matrix(decision_vals, nrow = length(x1range)), level = -0.5, add = TRUE, col = "red")
 ```
 
 # Next Steps
@@ -88,4 +100,3 @@ knitr::write_bib(c('knitr','rmarkdown','posterdown','pagedown'), 'packages.bib')
 ```
 
 # References
-
