@@ -7,7 +7,9 @@ Put your name in the Team Section and comment
 ## Team
 Bryan Kim
 Simon Shen
+Kirk Lam
 
 ## Comments
 Hi, this is Simon
 Hello :)
+Hi guys!
