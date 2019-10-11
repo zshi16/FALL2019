@@ -8,7 +8,7 @@ Put your name in the Team Section and comment
 Kai Chen Tan
 Jiayun Luo（Letitia）
 Qiyu Dai
-
+Tian Xinyuan
 ## Comments
 Hello！This is Letitia
 Hieeee! This is Stella
