@@ -13,3 +13,5 @@ Kaixin Wang, Joy Wang
 Kaixin is a senior undergraduate in Statistics.
 
 Joy is a senior undergraduate in Statistics.
+
+Suzie is a senior undergraduate in Statistics.
