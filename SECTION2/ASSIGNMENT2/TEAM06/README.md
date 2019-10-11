@@ -8,6 +8,10 @@ Put your name in the Team Section and comment
 
 Wang, Zheng
 
+Banatwala, Azeem
+
 ## Comments
 
 Wang, Zheng
+
+Team 06 Member List
