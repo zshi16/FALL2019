@@ -18,4 +18,6 @@ Lara, Edward
 
 Wang, Zheng
 
+Lara, Edward 
+
 Team 06 Member List
