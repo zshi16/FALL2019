@@ -6,7 +6,7 @@ Put your name in the Team Section and comment
 
 ## Team
 
-Kaixin Wang, Joy Wang
+Kaixin Wang, Joy Wang, Suzie Choi
 
 ## Comments
 
