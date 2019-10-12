@@ -8,9 +8,11 @@ Put your name in the Team Section and comment
 - Samuel Aycock
 - Charles Qian
 - Waveley Qiu
+- Karan Patel
 
 ## Comments
 - I'm a photographer
 - This is Sam's comment. Hello Team 5!
 - Waveley commenting. 
+- I like table tennis!
 
