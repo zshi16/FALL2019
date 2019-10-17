@@ -1,7 +1,8 @@
-The data can be found in a file named CensusAtSchoolDatabase2018.xls it has 75,930 entries.
+## The data can be found in a file named CensusAtSchoolDatabase2018.xls it has 75,930 entries.
 
-The 63 fields:
+### The 63 fields:
 
+<p>
 ResponseID
 ClassID
 ClassSize
@@ -65,3 +66,4 @@ Superpower
 Preferred_status
 Role_model_type
 Charity_donation
+</p>
