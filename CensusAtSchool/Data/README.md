@@ -4,7 +4,7 @@ The data can be found in a file named CensusAtSchoolDatabase2018asof12-8-18.xls 
 
 The data has 75,930 entries (rows).
 
-### There are 63 fields (columns):
+### There are 63 fields (columns) in the raw data (they will eventually require renaming):
 
 ```
 ResponseID
