@@ -1,8 +1,10 @@
 ## About the data
 
-The data can be found in a file named CensusAtSchoolDatabase2018.xls it has 75,930 entries.
+The data can be found in a file named CensusAtSchoolDatabase2018asof12-8-18.xls and it has been uploaded to Week 3 of CCLE. 
 
-### There are 63 fields:
+The data has 75,930 entries (rows).
+
+### There are 63 fields (columns):
 
 ```
 ResponseID
