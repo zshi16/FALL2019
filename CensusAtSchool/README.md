@@ -18,6 +18,6 @@ If you are unable to join a team before 5pm on 10/25/2019, I will start assignin
 
 Please identify your team (give it a name) and identify the members of the team in the space below.
 
-#### Team 1: 
+#### Team 1: Too coool for school
 Team Member:
 Tingyi Lu, Yuqing Jin, Catherine Wu, Zuxuan Huai, Junpeng Jiang
