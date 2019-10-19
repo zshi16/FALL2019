@@ -20,4 +20,4 @@ Please identify your team (give it a name) and identify the members of the team 
 
 #### Team 1: 
 Team Member:
-Tingyi Lu, Yuqing Jin, Catherine Wu, Zuxuan Huai, Marshall()
+Tingyi Lu, Yuqing Jin, Catherine Wu, Zuxuan Huai, Junpeng Jiang
