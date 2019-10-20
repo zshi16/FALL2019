@@ -8,8 +8,8 @@ CensusAtSchoolDatabase2018asof12-8-18.xls
 
 ## The requested work
 
-The work order from the American Statistical Association can be found in a repository named WORK, every team should work with the identifiers (the first 7 variables/fields) and then ~~~choose 6 other variables.  The other variables must be~~~
-~~~consecutive~~~ use the starred variables as identified in the survey questionnaire (find this one the data respository)
+The work order from the American Statistical Association can be found in a repository named WORK, every team should work with the identifiers (the first 7 variables/fields) and then ~~~choose 6 other variables.  The other variables must be consecutive~~~ 
+use the starred variables as identified in the survey questionnaire (find this one the data respository)
 
 ## The Teams
 
