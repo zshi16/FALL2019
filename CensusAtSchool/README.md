@@ -17,7 +17,7 @@ You may form your own team for the work on this project. A team may have 4, 5, o
 
 If you are unable to join a team before 5pm on 10/25/2019, I will start assigning students to teams and to variables in order to complete this project by 11/8/2019.
 
-Please identify your team (give it a name) and identify the members of the team in the space below.
+Please identify your team (give it a name) and identify the members of the team in the space below. <h4>Please also identify your sections if your team is comprised of members from different sections</h4>
 
 #### Team 1: Too coool for school
 Team Member:
