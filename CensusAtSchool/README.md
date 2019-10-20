@@ -21,4 +21,4 @@ Please identify your team (give it a name) and identify the members of the team 
 
 #### Team 1: Too coool for school
 Team Member:
-Tingyi Lu, Yuqing Jin, Catherine Wu, Zuxuan Huai, Junpeng Jiang
+Tingyi Lu (12pm), Yuqing Jin (12pm), Catherine Wu (2pm), Zuxuan Huai (12pm), Junpeng Jiang (12pm)
