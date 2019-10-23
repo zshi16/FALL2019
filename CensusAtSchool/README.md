@@ -30,3 +30,7 @@ Citlally Reynoso (2pm), Fatima Kabbaj (2pm), Hanna Grossman (2pm), Kai Chen Tan 
 #### Team 3: Data Miner
 Team Members:
 Yuqi Meng (12pm), Mengxuan Sun (12pm), Kaixin Wang (12pm), Luqi Zhong (12pm)
+
+#### Team 4:
+Team Members:
+Rose Din, Lisa Kaunitz, Claire Markey, Allison Ocelo, Cristina Sanchez, Kayla Schroeder
