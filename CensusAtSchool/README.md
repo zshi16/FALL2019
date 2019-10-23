@@ -22,3 +22,7 @@ Please identify your team (give it a name) and identify the members of the team 
 #### Team 1: Too coool for school
 Team Member:
 Tingyi Lu (12pm), Yuqing Jin (12pm), Catherine Wu (2pm), Zuxuan Huai (12pm), Junpeng Jiang (12pm)
+
+#### Team 2: RPower 
+Team Members:
+Citlally Reynoso (sec 3), Fatima Kabbaj (sec 3), Hanna Grossman (sec 3), Kai Chen Tan (sec 3), Patricia Njo (sec 1), Yuqing Yang (sec 3)
