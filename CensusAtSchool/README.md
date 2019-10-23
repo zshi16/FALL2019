@@ -25,7 +25,7 @@ Tingyi Lu (12pm), Yuqing Jin (12pm), Catherine Wu (2pm), Zuxuan Huai (12pm), Jun
 
 #### Team 2: RPower 
 Team Members:
-Citlally Reynoso (sec 3), Fatima Kabbaj (sec 3), Hanna Grossman (sec 3), Kai Chen Tan (sec 3), Patricia Njo (sec 1), Yuqing Yang (sec 3)
+Citlally Reynoso (2pm), Fatima Kabbaj (2pm), Hanna Grossman (2pm), Kai Chen Tan (2pm), Patricia Njo (12pm), Yuqing Yang (2pm)
 
 #### Team 3: Data Miner
 Team Members:
