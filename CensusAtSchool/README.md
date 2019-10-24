@@ -41,3 +41,8 @@ Lawrence Chen, Yurui Zhang, Zihao Chen, Miao Xu, Caizhen Huang, Yingyi Zhu (all 
 
 #### Team 6: 140SL Midvale
 Team Members: Qichen (Sam) Liang, Jiayu (Nicole) Lyu, Charles Qian, Xingruo (Summer) Zhang (all from 4pm)
+
+#### Team 7: Hopeful Stats Grads
+Team Members: 
+1PM Lecture members: Nishanth Shetty, Grant Baum, Bruce Tsai, Britney Brown 
+4PM Lecture members: William Zhu, Karan Patel 
