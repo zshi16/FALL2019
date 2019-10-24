@@ -39,5 +39,5 @@ Rose Din, Lisa Kaunitz, Claire Markey, Allison Ocelo, Cristina Sanchez, Kayla Sc
 Team Members:
 Lawrence Chen, Yurui Zhang, Zihao Chen, Miao Xu, Caizhen Huang, Yingyi Zhu (all from 12pm)
 
-#### Team 6: 140SL M
+#### Team 6: 140SL Midvale
 Team Members: Qichen (Sam) Liang, Jiayu (Nicole) Lyu, Charles Qian, Xingruo (Summer) Zhang (all from 4pm)
