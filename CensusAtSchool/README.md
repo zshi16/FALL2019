@@ -44,5 +44,6 @@ Team Members: Qichen (Sam) Liang, Jiayu (Nicole) Lyu, Charles Qian, Xingruo (Sum
 
 #### Team 7: Hopeful Stats Grads
 Team Members: 
-1PM Lecture members: Nishanth Shetty, Grant Baum, Bruce Tsai, Britney Brown 
+1PM Lecture members: Nishanth Shetty, Grant Baum, Bruce Tsai, Britney Brown
+
 4PM Lecture members: William Zhu, Karan Patel 
