@@ -46,3 +46,8 @@ Team Members: Qichen (Sam) Liang, Jiayu (Nicole) Lyu, Charles Qian, Xingruo (Sum
 Team Members: 
 * From 1PM Lecture: Nishanth Shetty, Grant Baum, Bruce Tsai, Britney Brown
 * From 4PM Lecture: William Zhu, Karan Patel 
+
+#### Team 8: 
+Team Members: 
+* 12 PM: Samuel Chen, Mengtong Pan
+* 2 PM: Cindy Zheng, Yi Lin Ye, Jiayun Luo, Rosy Zhou
