@@ -51,3 +51,6 @@ Team Members:
 Team Members: 
 * 12 PM: Samuel Chen, Mengtong Pan
 * 2 PM: Cindy Zheng, Yi Lin Ye, Jiayun Luo, Rosy Zhou
+
+#### Team 9:
+Team Members: Jonathan Chang (12 PM), Hui Yu Chuang (12 PM), Kevin Chen (2 PM), Dan Jin (2 PM), Tiffany Trinh (12 PM)
